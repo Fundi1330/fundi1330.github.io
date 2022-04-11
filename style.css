@@ -1,0 +1,111 @@
+body::before {
+    content: "";
+    background: url(images/swamp.jpg) center / cover no-repeat;
+    position: fixed; 
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    z-index: -1; 
+    filter: blur(8px); 
+    background-size: cover;
+    display: inherit;
+}    
+h1 {
+    color: white;
+    font-family: Sigmar One;
+    text-align: center;
+    font-size: 70px;
+    animation: logo 3s 1;
+}
+.info {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    font-family: Sigmar One;
+}
+.m-text {
+    color: rgb(255, 255, 255);
+}
+.main {
+    height: 60px;
+    padding: 0 50px;
+    overflow: hidden;
+}
+.text {
+    display: flex;
+    line-height: 60px;
+    color: rgb(151, 60, 151);
+}
+.text:first-child {
+    animation: slide 10s infinite;
+}
+.button {
+    display: flex;
+    font-weight: 500;
+    width: 200px;
+    padding: 18px;
+    color: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    text-align: left;
+    align-items: center;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: Sigmar One;
+    cursor: pointer;
+    margin: 5px;
+}
+.button:hover,
+.button:active {
+    background-color: rgba(255, 255, 255, 0.103);
+}
+#b1 {
+    text-align: center;
+    float: left;
+    margin-left: 450px;
+}
+#b2 {
+    text-align: center;
+    float: right;
+    margin-right: 450px;
+}
+#b3 {
+    text-align: center;
+    margin-left: 650px;
+    margin-top: 120px;
+    position: absolute;
+}
+.button .content {
+    text-align: left;
+    line-height: 1em;
+    margin-left: 12px;
+}
+#ds {
+    font-size: small;
+}
+#e-mail {
+    font-size: small;
+}
+@keyframes slide {
+    0%{
+        margin-top: 0px;
+    }
+    16%{
+        margin-top: -60px;
+    }
+    50%{
+        margin-top: -120px;
+    }
+    66%{
+        margin-top: -60px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+@keyframes logo{
+    0%{
+        margin-top: 10px;
+    }
+}
